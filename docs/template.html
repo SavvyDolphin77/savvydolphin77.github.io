@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
     <title>Conner Harbaugh Portfolio</title>
-    <script src="js/searchScript.js"></script>
   </head>
 
   <body>
@@ -21,9 +20,10 @@
         <a href="businessVentures.html">Business Ventures</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <form>
-        <input type="text" size="30" onkeyup="searchResult(this.value)">
-        <div id="searchBarResults"></div>
+      <form action="https://google.com/search" method="get" role="search">
+        <input type="hidden" name="q" value="site:savvydolphin77.github.io">
+        <input type="search" name="q" placeholder="Search This Site...">
+        <button type="submit"</button>
       </form>
     </header>
 
