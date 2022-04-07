@@ -8,6 +8,14 @@ header {
   align-items: center;
 }
 
+#middle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /* Code from webaim.org but modified a bit */
 /* Used to create accessibility tab skiptocontent button */
 #skiptocontent a {
