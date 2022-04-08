@@ -1,6 +1,18 @@
 /* Main CSS Code that Applies to Most Pages */
+/* Color Codes For Reference */
+/* Purple == #FE40FB */
+/* Green == #86EE86 */
 
-header {
+body {
+  background-color: black;
+  color: #86EE86;
+}
+
+a {
+  color: #FE40FB;
+}
+
+#topOfPage {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -45,7 +57,6 @@ header {
 	position:absolute;
 	left:0px;
 	top:0px;
-	outline-color:transparent;
 	-webkit-transition: top .1s ease-in;
     transition: top .1s ease-in;
 }
