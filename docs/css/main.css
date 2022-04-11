@@ -60,6 +60,31 @@ a {
   border-radius: 50%;
 }
 
+#searchButton {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  cursor: pointer;
+  border: 4px solid #FE40FB;
+  border-radius: 50%;
+  margin-left: 5px;
+  padding-top: 10px;
+}
+
+#searchButton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 13px;
+  height: 5px;
+  background-color: #FE40FB;
+  border-radius: 0 7.5px 7.5px 0;
+  transform-origin: 0% 85%;
+  transform: translateX(10%) rotate(135deg);
+}
+
 #goToTopButton #arrow {
   position: fixed;
   bottom: 62px;
