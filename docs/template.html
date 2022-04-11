@@ -6,7 +6,6 @@
   <head>
     <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
-    <script src="js/goToTop.js"></script>
     <title>Conner Harbaugh Portfolio</title>
   </head>
 
@@ -34,7 +33,7 @@
     <div id="middle">
 
       <!-- Left Side of Page -->
-      <section>
+      <section class="sides">
       </section>
 
       <!-- Main Body / Center Section of Page -->
@@ -61,8 +60,11 @@
       </main>
 
       <!-- Right Side of Page -->
-      <section>
-        <button onclick="goToTop()" id="goToTopButton" title="Go To Top"></button>
+      <section class="sides">
+        <button onclick="goToTop()" id="goToTopButton" title="Go To Top">
+          <div id="arrow"></div>
+        </button>
+        <script src="js/goToTop.js"></script>
       </section>
     </div>
 

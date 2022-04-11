@@ -28,12 +28,48 @@ a {
   align-items: center;
 }
 
+#middle .sides {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 #bottomOfPage {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Some of code is modified from W3Schools to create button and arrow for buttom */
+#goToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #FE40FB;
+  color: white;
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+#goToTopButton #arrow {
+  position: fixed;
+  bottom: 62px;
+  right: 23px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inherit;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 
 /* Code from webaim.org but modified a bit */
