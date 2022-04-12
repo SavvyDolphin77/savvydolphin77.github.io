@@ -12,11 +12,15 @@ a {
   color: #FE40FB;
 }
 
-#topOfPage {
+.navElement {
+  margin-right: 10px;
+}
+
+#firstLineofHeader {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
