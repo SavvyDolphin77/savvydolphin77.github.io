@@ -16,6 +16,17 @@ a {
   margin-right: 10px;
 }
 
+.footerPicLink {
+  text-decoration: none;
+}
+
+.footerPics {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
 #firstLineofHeader {
   display: flex;
   flex-direction: row;
@@ -43,6 +54,10 @@ a {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  border-top-width: 2px;
+  border-top-color: #FE40FB;
+  border-top-style: solid;
+  margin-top: 15px;
 }
 
 /* Code from webaim.org but modified a bit */
@@ -130,4 +145,15 @@ a {
   padding: 3px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+
+#footerConnectText {
+  display: inline-block;
+  text-align: center;
+  vertical-align:top;
+}
+
+#linkedInConnectLogo {
+  background-color: white;
+  border-radius: 7px;
 }
