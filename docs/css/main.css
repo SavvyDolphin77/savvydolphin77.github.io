@@ -2,6 +2,7 @@
 /* Color Codes For Reference */
 /* Purple == #FE40FB */
 /* Green == #86EE86 */
+/* Blue == #B3C2F2 */
 
 body {
   background-color: black;
@@ -12,8 +13,27 @@ a {
   color: #FE40FB;
 }
 
+nav {
+  border-bottom: 3px;
+  border-top: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #FE40FB;
+  margin-left: 25px;
+  display: flex;
+}
+
 .navElement {
-  margin-right: 10px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+}
+
+.verticalLine {
+  display: inline-block;
+  border-left: 3px solid #FE40FB;
+  height: inherit;
 }
 
 .footerPicLink {
@@ -27,11 +47,11 @@ a {
   margin-top: 10px;
 }
 
-#firstLineofHeader {
+#topOfPage {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -89,6 +109,10 @@ a {
 	#skiptocontent a {
 		transition-duration: 0.001ms !important;
 	}
+}
+
+#searchBar  {
+  margin-left: auto;
 }
 
 #searchButton {
