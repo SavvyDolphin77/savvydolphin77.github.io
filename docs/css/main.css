@@ -144,7 +144,7 @@ nav {
 #goToTopButton {
   display: none;
   position: fixed;
-  bottom: 55px;
+  bottom: 65px;
   right: 15px;
   z-index: 99;
   font-size: 18px;
@@ -161,7 +161,7 @@ nav {
 
 #goToTopButton #arrow {
   position: fixed;
-  bottom: 62px;
+  bottom: 72px;
   right: 23px;
   border: solid black;
   border-width: 0 3px 3px 0;
