@@ -1,0 +1,93 @@
+/* Responsive CSS Code that Applies to Most Pages */
+/* Used to make turn website into mobile friendly one. */
+
+/* Color Codes For Reference */
+/* Purple == #FE40FB */
+/* Green == #86EE86 */
+/* Blue == #B3C2F2 */
+
+@media (max-width: 600px) {
+  #computerNavigation { display: none; }
+  #topOfPage { display: block; }
+  #searchBar { display: none; }
+}
+
+@media (min-width: 601px) {
+  .hamburger { display: none; }
+}
+
+/* Hamburger Button Menu for Mobile */
+#toggle {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 3em;
+  right: 7%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 7;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #FE40FB;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  z-index: 5;
+}
+
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+#mobileNavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+
+.navElementMobile {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}

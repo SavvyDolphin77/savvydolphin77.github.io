@@ -5,7 +5,9 @@
   <!-- Meta Data For Site -->
   <head>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Conner Harbaugh Portfolio</title>
   </head>
 
@@ -16,7 +18,7 @@
       <div id="skiptocontent"><a href="#main-content">skip to main content</a></div>
       <!-- Note To Add Image Element Here Later -->
       <h2 id="websiteTitle">Conner Harbaugh</h2>
-      <nav>
+      <nav id="computerNavigation">
         <a class="navElement" href="about-me.html">About Me</a>
         <div class="verticalLine"></div>
         <a class="navElement" href="projects.html">Projects</a>
@@ -25,6 +27,28 @@
         <div class="verticalLine"></div>
         <a class="navElement" href="contact.html">Contact</a>
       </nav>
+
+      <!-- Hamburger Button Menu -->
+      <!-- Only Shows Up On Mobile / less then 600px -->
+      <input id="toggle" type="checkbox"></input>
+      <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </label>
+      <div class="nav">
+        <div class="nav-wrapper">
+          <nav id="mobileNavigation">
+            <a class="navElementMobile" href="index.html">Home</a>
+            <a class="navElementMobile" href="about-me.html">About Me</a>
+            <a class="navElementMobile" href="projects.html">Projects</a>
+            <a class="navElementMobile" href="businessVentures.html">Business Ventures</a>
+            <a class="navElementMobile" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Back to Rest of Header Normally on Page -->
       <form id="searchBar" action="https://google.com/search" target="_blank" method="get" role="search">
         <input type="hidden" name="q" value="site:savvydolphin77.github.io">
         <input type="search" name="q" placeholder="Search This Site...">
