@@ -6,6 +6,7 @@
 /* Green == #86EE86 */
 /* Blue == #B3C2F2 */
 
+/* Header Responsive Section */
 @media (max-width: 600px) {
   #computerNavigation { display: none; }
   #topOfPage { display: block; }
@@ -16,7 +17,22 @@
   .hamburger { display: none; }
 }
 
+/* Footer Responsive Section */
+@media (max-width: 501px) {
+  .footerPics { margin-top: -5px; }
+  #copyright { margin: auto; }
+  #connectFooter { width: 125px; }
+  #copyright { text-align: right; }
+  #goToTopButton { bottom: 88px; }
+  #goToTopButton #arrow { bottom: 94px; }
+}
+
+@media (min-width: 502px) {
+  #blankDiv { display: none; }
+}
+
 /* Hamburger Button Menu for Mobile */
+/* Code modifed from Álvaro on Codepen */
 #toggle {
   display: none;
 }
