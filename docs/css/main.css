@@ -19,6 +19,17 @@ a {
   text-decoration: none;
 }
 
+.navElement:hover {
+  font-weight: bolder;
+  background-color: #9AFF80;
+  color: #021405;
+}
+
+.navElementMobile:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
 .verticalLine {
   display: inline-block;
   border-left: 3px solid #9AFF80;
