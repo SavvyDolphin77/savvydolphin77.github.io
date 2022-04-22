@@ -13,9 +13,11 @@
 
   <!-- All of Content For Site -->
   <body>
+
     <!-- Header/Top of Page -->
     <header id="topOfPage">
       <div id="skiptocontent"><a href="#main-content">skip to main content</a></div>
+
       <!-- Note To Add Image Element Here Later -->
       <h2 id="websiteTitle">Conner Harbaugh</h2>
       <nav id="computerNavigation">
@@ -33,7 +35,7 @@
       <!-- Hamburger Button Menu -->
       <!-- Only Shows Up On Mobile / less then 600px -->
       <input id="toggle" type="checkbox"></input>
-      <label for="toggle" class="hamburger">
+      <label for="toggle" class="hamburger" id="hamburger" onclick="fixHamburger()">
         <div class="top-bun"></div>
         <div class="meat"></div>
         <div class="bottom-bun"></div>
@@ -49,6 +51,7 @@
           </nav>
         </div>
       </div>
+      <script src="js/fixHamburger.js"></script>
 
       <!-- Back to Rest of Header Normally on Page -->
       <form id="searchBar" action="https://google.com/search" target="_blank" method="get" role="search">
