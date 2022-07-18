@@ -1,0 +1,15 @@
+/* Main CSS Code for the About Me Page Specifically */
+
+/* Color Codes For Reference */
+/* BLack-ish Green == #021405 */
+/* Green == #9AFF80 */
+/* Blue == #B3C2F2 */
+/* White == #E1E1E1 */
+/* Purple == #FF4BF0 */
+
+#portraitPicture {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  height: 200px;
+}
