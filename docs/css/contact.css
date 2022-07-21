@@ -1,0 +1,20 @@
+/* Main CSS Code for Contact Page Specifically */
+
+/* Color Codes For Reference */
+/* BLack-ish Green == #021405 */
+/* Green == #9AFF80 */
+/* Blue == #B3C2F2 */
+/* White == #E1E1E1 */
+/* Purple == #FF4BF0 */
+
+ul a {
+  color: #B3C2F2;
+}
+
+ul a:visited {
+  color: #FF4BF0;
+}
+
+ul li {
+  padding-bottom: 15px;
+}
