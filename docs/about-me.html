@@ -6,13 +6,15 @@
   <head>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/about-us.css">
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" >
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Conner Harbaugh Portfolio</title>
   </head>
 
   <!-- All of Content For Site -->
-  <body>
+  <body onload="accordionKeyListeners();">
+    <script src="js/accordion.js" defer></script>
 
     <!-- Header/Top of Page -->
     <header id="topOfPage">
@@ -72,7 +74,120 @@
       <main>
         <article id="main-content">
           <h1>About Me</h1>
-          
+          <a id="downloadResume" href="">Download Resume</a>
+          <br>
+          <img id="connerFace" src="assets/conner_harbaugh.jpeg">
+          <h2>
+            Hello there! My name is Conner Harbaugh.
+          </h2>
+          <p>
+            As an Eagle Scout, I work towards creating and giving back to the commuunity. It is partially
+            why I am also currently majoring in Computer Science at the <a href="https://www.ucf.edu/" target="_blank">University of Central Florida</a> as
+            I see computer science as a unique way to give back and help other people through innovative
+            and accessible programs and software. The other reason that got me into computer science was my
+            interest at a young age when I participated and competed with my high school's cyber security club.
+          </p>
+          <p>
+            Competing and learing at my cybersecurity club in high school taught me a lot of valuable things. One
+            is that it got me experience with using a lot of tools such as Linux, Amazon Web Services, web applications,
+            and much much more. This exposure helped spark interest in the computer field. I have also gained great
+            soft skills through competing in the competions as a team. Durning the competitions while under the threat
+            of live hackers it can be immensely stressful and being able to work together is key. Having won two out of three
+            times at the <a href="http://pcdc-sc.com/" target="_blank">Palmetto Cyber Defense Competition</a>, it seems that
+            the teamwork we had paid off and those skills I gained with communication and teamwork will last a life time.
+          </p>
+          <p>
+            These soft skills where further carried along when I worked on my capstone project for high school. There I
+            created and ran a cyber security competiton amongst members of other schools to compete against each other.
+            This used live enviroments where I had to lead and build out various machines to stimulate a business like network
+            using VMware ESXI to spin up machines such as web applications via LAMP stack, ftp servers, remote desktop and
+            AD servers. The whole capstone process involved using new technologies I have used for such as Microsoft Project to help keep track
+            of the progress. It again involved soft skills where I have to communicate to the people that I was working with
+            so that we could stay on pace and accomplish our goals.
+          </p>
+          <p>
+            This exprience and skills have landed me my current job as a webdeveloper and techranger for the University of Central Florida's
+            Center for Distrubuted Learning. There I apply my knowledge and skill set to develop and help maintain the university's online
+            learning projects which are used by more than thousands of students each day. This has begun to help teach me industry level pratices as
+            well as improving my skills in software development which I can then carry and apply to in real life and other jobs.
+          </p>
+          <h2>More Personal Information</h2>
+          <p>
+            When not focusing on computer science, I enjoy a great deal of hobbies. For example I enjoy a good game of chess, and really any strategy
+            game for that matter such as Risk or Stellaris. These games get me thinking and analyzing the situation so that learn better of how to plan
+            and think ahead. I apply this to real life as well as like the Boy Scout motto says, be perpared, I am always thinking three steps ahead when it
+            comes to developing software or securing computers.
+          </p>
+          <p>
+            I also enjoy the great outdoors. From hiking up mountains to exploring dark cramp caves, it provides both a sense of adventure, a breath of freash
+            air, and a great source of inspiration. I find inspiration not only from the beauty of nature but also from good books. Some of which include,
+            the novel <i>Great Expectations</i> by Charles Dickens. This book was a great novel to read and really drove a message about having great expectations.
+            It filled me with hope and a desire to follow through my own great expectations to help provide for the community and help others.
+          </p>
+          <h2>Frequently Asked Questions</h2>
+          <input type="checkbox" id="nicknameQuestion" />
+          <label onclick="faqOpenClose(labelNicknameQuestion)" id="labelNicknameQuestion" class="accordionTitle" tabindex="0" for="nicknameQuestion">Where did the pseudo name for your Github account, Savvy Dolphin, come from?</label>
+          <div class="content">
+            <p>
+              The structure of the name came from one of my all time games as kid, Poptropica. A great game while it lasted but it resonated with me through
+              telling neat and deep family friendly stories on some of its islands which has since provided me inspiration for my game development projects
+              as well as other factors in life.
+            </p>
+            <p>
+              As for the name it self, sort of involves two parts. First is the savvy part and this comes from a personal reflection of myself. In that I
+              tend to find myself as a savvy guy, plus its a savvy word after all and sounds nice. The other part, dolphin comes my interest and liking of
+              dolphins as creatures. Probably my favorite animal, dolphins are some of the more intelligent species on the planet. They are also to be known
+              for a sense of humor so this intelligent and humor attributes I found similar to myself.
+            </p>
+          </div>
+
+          <input type="checkbox" id="motivateQuestion" />
+          <label onclick="faqOpenClose(labelMotivateQuestion)" id="labelMotivateQuestion" class="accordionTitle" tabindex="0" for="motivateQuestion">What motivates you?</label>
+          <div class="content">
+            <p>
+              There a lot of things that can motivate someone but for me personally its the desire to do good and give back to the community. Its to make
+              life have a purpose in a sense and what greater purpose is that then helping others?
+            </p>
+            <p>
+              My family and friends also provide support and have keep encouraging me to stay determined to push through tough assignments and projects.
+            </p>
+          </div>
+          <script>
+          //  var checkbox = document.getElementById("labelMotivateQuestion");
+          //  checkbox.addEventListener("keypress", function (event) {
+
+            // Checking if key pressed is ENTER or not
+            // if the key pressed is ENTER
+            // click listener on button is called
+          //  if (event.keyCode == 13)
+          //  {
+                // calls a click on target and then gets focus back on target
+              //  event.target.click();
+              //  //event.target.focus();
+            //}
+// prettier format for css.
+        //  })
+          </script>
+          <input type="checkbox" id="aspireQuestion" />
+          <label tabindex="0" onclick="faqOpenClose(labelAspireQuestion)" id="labelAspireQuestion" class="accordionTitle" for="aspireQuestion">What do you aspire for?</label>
+
+          <div class="content">
+            <p>
+              That is a hard question to answer as goals shift form time to time, but I think my biggest desire and apsiration currently would be like mentioned
+              before to help and give back to my community. Specifically in software development and is why I lauched and pioneered my business which you can
+              read more about in <a href="business-ventures.html">business ventures</a> page. The real goal is to create products in non intrusive ways that still
+              manage to be the same level of efficiency and cost.
+            </p>
+            <p>
+              I also generally aspire to be just be a good person. While no is perfect as an Eagle scout I hold my self to certain moral standards deriving from the
+              Scout's Law, such as being trustworthy, loyal, helpful, courteous, and kind. In part I do that by giving back to community through the work and projects
+              I do, but I also carry this philisophy out in every day life to continue striving and improving myself to be the best person I can be.
+            </p>
+          </div>
+          <script src="js/faqOpenClose.js"></script>
+          <h2>Want to Learn More?</h2>
+          <p>
+            If you would like to learn more about me please visit the <a href="contact.html">Contact Page</a> to get in touch.
         </article>
       </main>
 
