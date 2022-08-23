@@ -51,7 +51,7 @@ p a:visited {
 /* Accordian CSS Code */
 
 article input {
-  display: block;
+  display: none;
 }
 
 article label {
