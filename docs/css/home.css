@@ -11,6 +11,11 @@ h1 {
   text-align: center;
 }
 
+article h2 {
+  text-align: center;
+  font-size: 93%;
+}
+
 p {
   text-align: center;
 }
