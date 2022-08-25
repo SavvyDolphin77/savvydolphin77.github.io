@@ -7,16 +7,25 @@
 /* White == #E1E1E1 */
 /* Purple == #FF4BF0 */
 
-body {
+article {
   text-align: center;
+}
+
+#middle {
+  justify-content: center;
 }
 
 h1, h2, h3 {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+
 h2 {
   margin: 10px 0;
+  text-decoration: none;
 }
 
 h3 {
@@ -31,6 +40,10 @@ h3 {
 
 .panel {
   border-radius: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #9AFF80;
 }
 
 .panel-heading {
@@ -47,8 +60,10 @@ h3 {
   width: auto;
   height: auto;
   float: right;
-  background-color: #337ab7;
+
   border-radius: 5px;
+  border-color: #9AFF80;
+
   padding: 5px 10px;
   margin: 0 0 10px 10px;
 }
@@ -61,7 +76,7 @@ h3 {
 
 .star-div p {
   margin: 0;
-  color: #fff;
+  color: #E1E1E1;
   font-weight: bold;
   font-size: 20px;
   padding-left: 5px;
