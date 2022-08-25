@@ -1,0 +1,20 @@
+/* Main CSS Code for Home Page Specifically */
+
+/* Color Codes For Reference */
+/* BLack-ish Green == #021405 */
+/* Green == #9AFF80 */
+/* Blue == #B3C2F2 */
+/* White == #E1E1E1 */
+/* Purple == #FF4BF0 */
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#middle {
+  justify-content: center;
+}
