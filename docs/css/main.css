@@ -1,0 +1,203 @@
+/* Main CSS Code that Applies to Most Pages */
+
+/* Color Codes For Reference */
+/* BLack-ish Green == #021405 */
+/* Green == #9AFF80 */
+/* Blue == #B3C2F2 */
+/* White == #E1E1E1 */
+/* Purple == #FF4BF0 */
+
+body {
+  background-color: #021405;
+  color: #E1E1E1;
+}
+
+a {
+  color: #9AFF80;
+}
+
+h2 a {
+    color: #E1E1E1;
+    text-decoration: none;
+    font-size: 112%;
+}
+
+.navElement {
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+}
+
+.navElement:hover {
+  font-weight: bolder;
+  background-color: #9AFF80;
+  color: #021405;
+}
+
+.navElementMobile:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.verticalLine {
+  display: inline-block;
+  border-left: 3px solid #9AFF80;
+  height: inherit;
+}
+
+.footerPicLink {
+  text-decoration: none;
+}
+
+.footerPics {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+#topOfPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#middle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#middle .sides {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#bottomOfPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top-width: 2px;
+  border-top-color: #9AFF80;
+  border-top-style: solid;
+  margin-top: 15px;
+}
+
+/* Code from webaim.org but modified a bit */
+/* Used to create accessibility tab skiptocontent button */
+#skiptocontent a {
+	padding: 6px;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	color: #021405;
+	border-right: 1px solid #021405;
+	border-bottom: 1px solid #021405;
+	border-bottom-right-radius:8px;
+	background: #9AFF80;
+	-webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 100;
+}
+
+#skiptocontent a:focus {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	-webkit-transition: top .1s ease-in;
+    transition: top .1s ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#skiptocontent a {
+		transition-duration: 0.001ms !important;
+	}
+}
+
+#computerNavigation {
+  border-bottom: 3px;
+  border-top: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #9AFF80;
+  margin-left: 25px;
+  display: flex;
+}
+
+#searchBar  {
+  margin-left: auto;
+}
+
+#searchButton {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #021405;
+  cursor: pointer;
+  border: 4px solid #9AFF80;
+  border-radius: 50%;
+  margin-left: 5px;
+  padding-top: 10px;
+}
+
+#searchButton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 13px;
+  height: 5px;
+  background-color: #9AFF80;
+  border-radius: 0 7.5px 7.5px 0;
+  transform-origin: 0% 85%;
+  transform: translateX(10%) rotate(135deg);
+}
+
+/* Some of code is modified from W3Schools to create button and arrow for buttom */
+#goToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 65px;
+  right: 15px;
+  z-index: 3;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #9AFF80;
+  color: #E1E1E1;
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+#goToTopButton #arrow {
+  position: fixed;
+  bottom: 72px;
+  right: 23px;
+  border: solid #021405;
+  border-width: 0 3px 3px 0;
+  display: inherit;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+#footerConnectText {
+  display: inline-block;
+  text-align: center;
+  vertical-align:top;
+}
+
+#linkedInConnectLogo {
+  background-color: white;
+  border-radius: 7px;
+}

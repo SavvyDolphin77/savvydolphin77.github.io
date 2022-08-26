@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<!-- HTML of Site -->
+<html lang="en" dir="ltr">
+  <!-- Meta Data For Site -->
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" >
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Conner Harbaugh Portfolio</title>
+  </head>
+
+  <!-- All of Content For Site -->
+  <body>
+
+    <!-- Header/Top of Page -->
+    <header id="topOfPage">
+      <div id="skiptocontent"><a href="#main-content">skip to main content</a></div>
+
+      <!-- Note To Add Image Element Here Later -->
+      <h2 id="websiteTitle"><a href="home.html">Conner Harbaugh</a></h2>
+      <nav id="computerNavigation">
+        <a class="navElement" href="home.html">Home</a>
+        <div class="verticalLine"></div>
+        <a class="navElement" href="about-me.html">About Me</a>
+        <div class="verticalLine"></div>
+        <a class="navElement" href="projects.html">Projects</a>
+        <div class="verticalLine"></div>
+        <a class="navElement" href="business-ventures.html">Business Ventures</a>
+        <div class="verticalLine"></div>
+        <a class="navElement" href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Hamburger Button Menu -->
+      <!-- Only Shows Up On Mobile / less then 600px -->
+      <input id="toggle" type="checkbox"></input>
+      <label for="toggle" class="hamburger" id="hamburger" onclick="fixHamburger()">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </label>
+      <div class="nav">
+        <div class="nav-wrapper">
+          <nav id="mobileNavigation">
+            <a class="navElementMobile" href="home.html" tabindex="-1">Home</a>
+            <a class="navElementMobile" href="about-me.html" tabindex="-1">About Me</a>
+            <a class="navElementMobile" href="projects.html" tabindex="-1">Projects</a>
+            <a class="navElementMobile" href="business-ventures.html" tabindex="-1">Business Ventures</a>
+            <a class="navElementMobile" href="contact.html" tabindex="-1">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <script src="js/fixHamburger.js"></script>
+
+      <!-- Back to Rest of Header Normally on Page -->
+      <form id="searchBar" action="https://google.com/search" target=" blank" method="get" role="search">
+        <input type="hidden" name="q" value="site:savvydolphin77.github.io">
+        <input type="search" name="q" placeholder="Search This Site...">
+        <button id="searchButton" title="Click to Search" type="submit"></button>
+      </form>
+    </header>
+
+    <!-- Middle Part of Page  -->
+    <div id="middle">
+
+      <!-- Left Side of Page -->
+      <section class="sides">
+      </section>
+
+      <!-- Main Body / Center Section of Page -->
+      <main>
+        <article id="main-content">
+          <h1>Welome to The Future</h1>
+          <h2>Where logic binds us all!</h2>
+          <pre>
+
+                                           .`;'
+                                       . ` ;;'
+                              . ` `  `   ;;;'
+                            `       *  ;;;
+                          `            ;;;
+                        `            ;;;;
+                      `            ;;;;;.
+                    `           .;;;;;;**.
+                   `          ;`* .;;; `**.
+                 `           ;;`****.    '*.
+            '** `           ;;;;'****.    .
+         '*****`            ;;;;;`***.
+     '********`           ;;;;;;  `**.
+             `          ;;;;;;;    .*
+            `         ;;;;;;;;
+           `        ;;;;;;;;
+--^--^--^--^--^--^--^--^--^--^--^--^--^--^--^--^--^--
+
+*- Art Modified from <a href="https://github.com/pumatea/ascii_motives/blob/main/dolphin">Github User Pumatea Ascii_Motives</a> -*
+          </pre>
+          <p>
+            Hello there and welcome to my website.
+            <br><br>
+            Here you can find a few of my <a href="projects.html">projects</a> as well learn all <a href="about-me.html">about me</a>.
+            Also, check out <a href="business-ventures.html">businesses</a> I have launched through my own hard work.
+            This site even has my <a href="contact.html">contact information</a> so you can reach out to me at any time for inquires.
+            <br><br>
+            So, what are you waiting for? Click or tab through the main menu above
+            to start exploring this site.
+          </p>
+        </article>
+      </main>
+
+      <!-- Right Side of Page -->
+      <section class="sides">
+        <button onclick="goToTop()" id="goToTopButton" title="Go To Top">
+          <div id="arrow"></div>
+        </button>
+        <script src="js/goToTop.js"></script>
+      </section>
+    </div>
+
+    <!-- Footer secton / Bottom of Page -->
+    <footer id="bottomOfPage">
+      <section id="connectFooter">
+        <p id="footerConnectText">
+        Connect:
+        </p>
+        <div id="blankDiv"></div>
+        <a class="footerPicLink" href="https://www.linkedin.com/in/connerharbaugh/" target=" blank">
+          <img class="footerPics" id="linkedInConnectLogo" alt="LinkedIn Company Logo" src="assets/linkedInLogo.svg">
+        </a>
+        <a class="footerPicLink" href="https://github.com/SavvyDolphin77" target=" blank">
+          <img class="footerPics" alt="Github Company Logo" src="assets/githubLogo.svg">
+        </a>
+      </section>
+      <p id="copyright">
+        Copyright 2022 Conner Harbaugh. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

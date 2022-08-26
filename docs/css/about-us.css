@@ -1,0 +1,115 @@
+/* Main CSS Code for About Us Page Specifically */
+
+/* Color Codes For Reference */
+/* BLack-ish Green == #021405 */
+/* Green == #9AFF80 */
+/* Blue == #B3C2F2 */
+/* White == #E1E1E1 */
+/* Purple == #FF4BF0 */
+
+h2 {
+  font-size: 125%;
+}
+
+p a {
+  color: #B3C2F2;
+}
+
+p a:visited {
+  color: #FF4BF0;
+}
+
+#connerFace {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+#downloadResume {
+  border-bottom: 3px;
+  border-top: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #9AFF80;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+#downloadResume:hover {
+  background-color: #9AFF80;
+  color: #021405;
+}
+
+/* Accordian CSS Code */
+
+article input {
+  display: none;
+}
+
+article label {
+    display: block;
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    position: relative;
+    border-radius: 3px;
+    transition: ease .5s;
+    background: #021405;
+    border-radius: 3px;
+    color: #9AFF80;
+    transition: ease .5s;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-left: 3px;
+    border-right: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #9AFF80;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+article label:hover {
+    background-color: #9AFF80;
+    color: #021405;
+    font-weight: bold;
+    transition: ease .5s;
+}
+
+.content {
+    background: #021405;
+    padding: 10px 25px;
+    border: 1px solid #A7A7A7;
+    margin: 0 0 1px 0;
+}
+
+article input + .accordionTitle + .content {
+  display: none;
+}
+
+article input:checked + .accordionTitle + .content {
+    display: block;
+}
+
+article label:after {
+    content: '+';
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    color: inherit;
+}
+
+article input:checked + .accordionTitle:after {
+    content: '-';
+    right: 14px;
+    top: 3px;
+}
