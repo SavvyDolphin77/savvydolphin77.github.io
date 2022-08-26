@@ -16,6 +16,12 @@ a {
   color: #9AFF80;
 }
 
+h2 a {
+    color: #E1E1E1;
+    text-decoration: none;
+    font-size: 112%;
+}
+
 .navElement {
   padding: 5px 5px 5px 5px;
   text-decoration: none;
