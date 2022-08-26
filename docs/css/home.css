@@ -20,6 +20,15 @@ p {
   text-align: center;
 }
 
+article a:visited {
+  color: #FF4BF0;
+}
+
 #middle {
   justify-content: center;
+}
+
+#middle .sides {
+  padding-left: 300px;
+  padding-right: 300px;
 }
