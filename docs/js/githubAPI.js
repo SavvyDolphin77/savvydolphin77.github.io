@@ -35,7 +35,7 @@ $.get(url, function(data) {
         for(let i = 0; i < languages.length; i++) {
           languageList.append(`<li><strong>${languages[i]}</strong></li>`);
         }
-      });
+      }, 500);
     });
   }
 });
